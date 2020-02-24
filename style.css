@@ -1,0 +1,17 @@
+@import "normal.css";
+
+
+html{
+    font-size:100%;
+    box-sizing: border-box;
+}
+
+[hidden] {
+    display:none !important;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
