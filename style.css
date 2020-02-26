@@ -19,15 +19,11 @@ html{
     font-family: sans-serif;
 }
 
-[hidden] {
-    display:none !important;
-}
+[hidden] {display:none !important;}
 
 *,
 *:before,
-*:after {
-	box-sizing: inherit;
-}
+*:after {box-sizing: inherit;}
 
 #logo{
     width:7.5rem;
@@ -37,9 +33,7 @@ html{
     padding-top: 1rem;
 }
 
-a{
-    text-decoration: none;
-}
+a{text-decoration: none;}
 header{
     border-bottom: solid 1px grey;
     padding-bottom: 1rem; 
@@ -75,15 +69,26 @@ h2{color:var(--green)}
     padding-top: 1rem;
 }
 
-#who, #what, #how, .what{
-    width: 100%;
-}
+#who, #what, #how, .what{width: 100%;}
 
 #who p, #what p, #how p, .what p{ 
     display: block;
     margin-left: auto;
     margin-right: auto;
     width:100%;
+}
+#what img{
+    width:95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.what img, #how img{
+    width:20rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main p{
@@ -110,5 +115,8 @@ footer{
     #who p, #what p, #how p, .what p{ 
         width:75ch;
     }
+    #what img{width:22rem;}
     main p{width:75ch;}
 }
+
+@media screen and (min-width:74rem){#what img{width:32rem;}}
