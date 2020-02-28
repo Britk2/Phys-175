@@ -8,8 +8,28 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <div id="filter">
+        <svg viewBox="0 0 600 400" width="0" height="0" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <filter id="f">
+              <feColorMatrix
+              in="SourceGraphic"
+              type="matrix"
+              values="1, 0, 0, 0, 0
+                      0, 1, 0, 0, 0
+                      0, 0, 1, 0, 0
+                      0, 0, 0, 1, 0"/>
+            </filter>
+        </defs>
+        </svg>
+    </div>
     <a href="index.html"><img src="logo.svg" alt="logo" id="logo"></a>
-    <a href="#top"><h1 id="#top">Home</h1></a>
+    <div id="bar">
+        <a href="#top">
+            <h1 id="#top">Home</h1>
+        </a>
+        <button id="fill">Deuteranopia Filter</button>
+    </div>
     <header>
         <div class="links">
             <a href="index.html">Home</a>
@@ -44,5 +64,6 @@
         <p>Glasses Design: Alex Weber</p>
         <p>Research: Arette Tran</p>
     </footer>
+    <script src="jav.js"></script>
 </body>
 </html>
